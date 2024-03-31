@@ -2,6 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #333333; /* Dark gray background color */
+    color: #ffffff; /* White text color */
 }
 
 .container {
@@ -20,6 +22,7 @@ body {
     width: 100px;
     height: 100px;
     object-fit: cover;
+    object-position: center center; /* Center the image */
 }
 
 .username {
@@ -31,19 +34,42 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Center items horizontally */
 }
 
 .links li {
-    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100px; /* Set width of each circular icon */
+    
 }
 
 .links a {
     display: block;
-    padding: 10px;
-    background-color: #f1f1f1;
-    text-decoration: none;
-    color: #333;
-    border-radius: 5px;
+    width: 50px; /* Set the width and height of the circular icon */
+    height: 50px;
+    border-radius: 35%; /* Make it circular */
+    background-size: cover;
+    background-position: center center; /* Center the background image */
+    overflow: hidden; /* Hide overflow content */
+    position: relative; /* Position the site name */
+}
+
+.links a::after {
+    content: attr(data-name); /* Display the site name */
+    position: absolute;
+    bottom: -20px; /* Position the site name at the bottom */
+    left: 0;
+    right: 0;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 5px black; /* Add a sharp black shadow */
+    white-space: nowrap;
+    z-index: 1; /* Ensure the text is above the icon */
 }
 
 /* Responsive styles */
@@ -62,6 +88,11 @@ body {
     }
 
     .links a {
-        padding: 8px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .links li {
+        margin-right: 10px;
     }
 }
