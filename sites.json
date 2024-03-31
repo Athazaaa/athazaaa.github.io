@@ -1,22 +1,19 @@
-[
-    {
-        "name": "kick",
-        "link": "https://www.example.com",
-        "image": "kick.svg"
-    },
-    {
-        "name": "Site 2",
-        "link": "https://www.google.com",
-        "image": "twitch.webp"
-    },
-    {
-        "name": "Site 3",
-        "link": "https://www.google.com",
-        "image": "kick.svg"
-    },
-    {
-        "name": "Site 4",
-        "link": "https://www.google.com",
-        "image": "twitch.webp"
-    }
-]
+{
+    "sites": [
+        {
+            "name": "KICK",
+            "link": "https://site1.com",
+            "image": "images/kick.svg"
+        },
+        {
+            "name": "KICK",
+            "link": "https://site1.com",
+            "image": "images/kick.svg"
+        },
+        {
+            "name": "KICK",
+            "link": "https://site1.com",
+            "image": "images/kick.svg"
+        }
+    ]
+}
