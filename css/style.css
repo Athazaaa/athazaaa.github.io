@@ -106,6 +106,7 @@ body {
   text-shadow: 0px 0px 6px rgb(255, 0, 0);
 }
 .wrapper {
+  margin: 2em;
   display: grid;
   grid-template-areas: 'overlap';
   place-content: center;
@@ -113,6 +114,7 @@ body {
   height: 6vh;
 }
 .wrapper > div {
+  margin: 2em;
   background-clip: text;  
   -webkit-background-clip: text;
   font-family: 'Poppins', sans-serif;
